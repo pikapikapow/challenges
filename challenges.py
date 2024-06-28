@@ -83,7 +83,7 @@ print(num_finder())
 #     print("False")
 
 def multiplication_table():
-    for num in range(1, 11):
-        for i in range(1, 11):
+    for num in range(1, 13):
+        for i in range(1, 13):
             print(num, 'x', i, '=', num*i)
 multiplication_table()
