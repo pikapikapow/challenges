@@ -49,6 +49,46 @@ function clear() {
       new_array.push(points[i]);
     }
   }
+  console.log(new_array);
 }
 
 clear();
+
+const stringWithSpaces = "r o l l s";
+const stringWithoutSpaces = stringWithSpaces.replace(/\s/g, "");
+console.log(stringWithoutSpaces);
+
+function tens_checker(num) {
+  if (num % 10 == 0) {
+    console.log("True");
+  } else {
+    console.log("False");
+  }
+}
+tens_checker(20);
+
+function max_finder(array) {
+  let big = 0;
+  for (let i = 0; i <= array.length; i++) {
+    if (array[i] > big) {
+      big = array[i];
+    }
+  }
+  console.log(big);
+}
+
+max_finder([2, 5, -6, 8, 3]);
+
+function palindrome_finder(word) {
+  let new_word = word;
+  let split_word = new_word.split();
+  let reverse_word = split_word.reverse();
+  let join_word = reverse_word.join();
+  if (join_word === word) {
+    console.log("True");
+  } else {
+    console.log("False");
+  }
+}
+
+palindrome_finder("kayak");
